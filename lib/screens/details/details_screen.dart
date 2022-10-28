@@ -101,11 +101,11 @@ class DetailsScreen extends StatelessWidget {
                             TypewriterAnimatedText(
                               'Add to chart',
                               textStyle: const TextStyle(
-                                fontSize: 12.0,
+                                fontSize: 18.0,
                                 fontWeight: FontWeight.bold,
-                                color: Colors.greenAccent,
-                              ),
-                              speed: const Duration(milliseconds: 200),
+                                color: Colors.black,
+                                backgroundColor: Colors.green),
+                              speed: const Duration(milliseconds: 100),
                             ),
                           ],
                           totalRepeatCount: 10,
