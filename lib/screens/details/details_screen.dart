@@ -95,17 +95,23 @@ class DetailsScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: defaultPadding * 2),
                   Center(
-                    child: SizedBox(
-                      width: 200,
-                      height: 48,
-                      child: ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                            primary: primaryColor,
-                            shape: const StadiumBorder()),
-                        child: const Text("Add to Cart"),
-                      ),
-                    ),
+                    child:  AnimatedTextKit(
+                          animatedTexts: [
+                            TypewriterAnimatedText(
+                              'Add to chart',
+                              textStyle: const TextStyle(
+                                fontSize: 12.0,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.greenAccent,
+                              ),
+                              speed: const Duration(milliseconds: 200),
+                            ),
+                          ],
+                          totalRepeatCount: 10,
+                          pause: const Duration(milliseconds: 200),
+                          displayFullTextOnTap: true,
+                          stopPauseOnTap: true,
+                        )),
                   )
                 ],
               ),
