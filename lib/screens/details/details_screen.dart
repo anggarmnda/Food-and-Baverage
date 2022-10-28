@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:stylish/constants.dart';
 import 'package:stylish/models/Product.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 import 'components/color_dot.dart';
 
